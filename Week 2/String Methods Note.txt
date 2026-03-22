@@ -1,0 +1,42 @@
+str.count(sub[, start[, end]])
+Purpose: return the number of non-overlapping occurrences of substring sub in the range [start, end]. 
+Usage: Used when you need to know how many times some substring has appeared in the string.
+Example:
+    string = "I had beef and cheese for dinner"
+    beef_count = string.count("beef")
+    print(beef_count)
+
+    Output: 1
+
+
+str.strip(chars=None, /)
+Purpose: Return a copy of the string with the leading and trailing characters removed. The chars argument is a string specifying the set of characters to be removed.
+Usage: Used when you need a substring without any special characters that are in the input string.
+Example:
+    string = "xxx.hi.com"
+    stripped_string = string.strip("x.com")
+    print(stripped_string)
+
+    Output: "hi"
+
+
+str.index(sub[, start[, end]])
+Purpose: Return the lowest index in the string where substring sub is found within the slice s[start:end]. Optional arguments start and end are interpreted as in slice notation. Raises ValueError when substring was not found.
+Usage: Used when you need to know the position of a substring in a string.
+Example: 
+    string = "hello"
+    h_index = string.index("h")
+    print(h_index)
+
+    Output: 0
+
+
+str.isalpha()
+Purpose: Return True if all characters in the string are alphabetic and there is at least one character, False otherwise.
+Usage: Used when you need to see if a string has any non alphabetic characters.
+Example: 
+    string = "hello!"
+    string_alpha = string.isalpha()
+    print(string_alpha)
+
+    Output: False
